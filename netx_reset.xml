@@ -3,7 +3,7 @@
 	<info group="org.muhkuh.tools"
 	      module="netx_reset"
 	      artifact="netx_reset"
-	      version="0.0.1"
+	      version="0.0.2"
 	      vcs-id="${PROJECT_VERSION_VCS}"
 	      extension="tar.gz">
 		<license name="GPL-2.0"/>
@@ -11,7 +11,10 @@
 		<description>Reset the netX with an openOCD script.</description>
 	</info>
 	<dependencies>
-		<dependency group="org.lua"        module="lua"        artifact="lua"               version="5.1"/>
-		<dependency group="org.muhkuh.lua" module="luaopenocd" artifact="lua5.1-luaopenocd" version="1.0.3"/>
+		<dependency group="org.lua"                 module="lua"        artifact="lua"               version="5.4"/>
+		<dependency group="com.github.moteus"       module="lua-log"    artifact="lua-log"           version="0.1"/>
+		<dependency group="org.muhkuh.lua"          module="luaopenocd" artifact="lua5.4-luaopenocd" version="1.0"/>
+		<dependency group="com.github.mpeterv"      module="argparse"   artifact="argparse"          version="0.6"/>
+		<dependency group="com.github.stevedonovan" module="penlight"   artifact="penlight"          version="1.7"/>
 	</dependencies>
 </jonchki-artifact>
